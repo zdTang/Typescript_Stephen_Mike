@@ -14,6 +14,10 @@ axios.get(url).then((response) => {
   /* const ID = todo.id;
   const title = todo.title;
   const finished = todo.completed; */
+  logTodo(todo);
+});
+
+function logTodo(todo: Todo) {
   const ID = todo.id; // using a wrong key
   const title = todo.title; // using a wrong key
   const finished = todo.completed; // using a wrong key
@@ -22,4 +26,4 @@ axios.get(url).then((response) => {
   Has a title of: ${title}
   Is it finished? ${finished}
   `);
-});
+}
