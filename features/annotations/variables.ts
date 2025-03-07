@@ -41,3 +41,11 @@ for (let i = 0; i < words.length; i++) {
     foundWord = true;
   }
 }
+//3) Variable whose type cannot be inferred correctly
+let numbers1 = [-10, -1, 12];
+let numberAboveZero: boolean | number = false;
+for (let i = 0; i < numbers1.length; i++) {
+  if (numbers1[i] > 0) {
+    numberAboveZero = numbers1[i];
+  }
+}
